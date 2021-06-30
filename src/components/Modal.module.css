@@ -1,0 +1,65 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  min-width: 50vw;
+  max-width: 70vw;
+  min-height: 40vh;
+  max-height: 60vh;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.content {
+  margin-bottom: 1rem;
+}
+
+.actions {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.actions *:first-child {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .actions {
+    flex-direction: row;
+  }
+
+  .actions *:first-child {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+}
